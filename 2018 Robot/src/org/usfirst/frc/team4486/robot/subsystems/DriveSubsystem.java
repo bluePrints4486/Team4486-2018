@@ -18,7 +18,8 @@ public class DriveSubsystem extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 
-	 DifferentialDrive Drive;
+	 DifferentialDrive drive;
+	 
 	public DriveSubsystem(){
 		VictorSP doubleRightMotor = new VictorSP(RobotMap.DOUBLE_RIGHT_MOTOR);
 		VictorSP singleRightMotor = new VictorSP(RobotMap.SINGLE_RIGHT_MOTOR);
@@ -30,14 +31,14 @@ public class DriveSubsystem extends Subsystem {
 		
 		SpeedControllerGroup scLeft = new SpeedControllerGroup(doubleLeftMotor,singleLeftMotor); 
 				
-	Drive  = new DifferentialDrive(scLeft,scRight);
+	drive  = new DifferentialDrive(scLeft,scRight);
 	
-	Drive.setMaxOutput(.65);
+	drive.setMaxOutput(.65);
 	
 	}
 	
 	public void drive(){
-		Drive.tankDrive(OI.driver.getY(), OI.driver.getThrottle());
+		drive.tankDrive(OI.driver.getY(), OI.driver.getThrottle());
 		
 		
 	}

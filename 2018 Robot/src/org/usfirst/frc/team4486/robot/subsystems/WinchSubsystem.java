@@ -15,10 +15,10 @@ public class WinchSubsystem extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 	
-	VictorSP doublewinchmotor = new VictorSP(RobotMap.DOUBLE_WINCH_MOTOR);
-	public void movewinch(){
+	VictorSP doubleWinchMotor = new VictorSP(RobotMap.DOUBLE_WINCH_MOTOR);
+	public void moveWinch(){
 		
-		doublewinchmotor.set(-OI.manipulator.getY());
+		doubleWinchMotor.set(-OI.manipulator.getY());
 	}
 	
 
