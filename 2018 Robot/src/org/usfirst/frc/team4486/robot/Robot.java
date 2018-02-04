@@ -4,14 +4,9 @@ package org.usfirst.frc.team4486.robot;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
-import edu.wpi.first.wpilibj.livewindow.LiveWindow;
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
-import org.usfirst.frc.team4486.robot.commands.ExampleCommand;
 import org.usfirst.frc.team4486.robot.subsystems.BoxIntakeSubsystem;
 import org.usfirst.frc.team4486.robot.subsystems.DriveSubsystem;
-import org.usfirst.frc.team4486.robot.subsystems.ExampleSubsystem;
 import org.usfirst.frc.team4486.robot.subsystems.WinchSubsystem;
 
 /**
@@ -23,7 +18,6 @@ import org.usfirst.frc.team4486.robot.subsystems.WinchSubsystem;
  */
 public class Robot extends IterativeRobot {
 
-	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 	public static OI oi;
 	
 	public static final DriveSubsystem drive = new DriveSubsystem();
@@ -59,29 +53,13 @@ public class Robot extends IterativeRobot {
 		Scheduler.getInstance().run();
 	}
 
-	/**
-	 * This autonomous (along with the chooser code above) shows how to select
-	 * between different autonomous modes using the dashboard. The sendable
-	 * chooser code works with the Java SmartDashboard. If you prefer the
-	 * LabVIEW Dashboard, remove all of the chooser code and uncomment the
-	 * getString code to get the auto name from the text box below the Gyro
-	 *
-	 * You can add additional auto modes by adding additional commands to the
-	 * chooser code above (like the commented example) or additional comparisons
-	 * to the switch structure below with additional strings & commands.
-	 */
+
 	@Override
 	public void autonomousInit() {
-		autonomousCommand = new ExampleCommand();
+		//Update and use this line when we write an autonomous command
+		//autonomousCommand = new ExampleCommand();
 
-		/*
-		 * String autoSelected = SmartDashboard.getString("Auto Selector",
-		 * "Default"); switch(autoSelected) { case "My Auto": autonomousCommand
-		 * = new MyAutoCommand(); break; case "Default Auto": default:
-		 * autonomousCommand = new ExampleCommand(); break; }
-		 */
 
-		// schedule the autonomous command (example)
 		if (autonomousCommand != null)
 			autonomousCommand.start();
 	}

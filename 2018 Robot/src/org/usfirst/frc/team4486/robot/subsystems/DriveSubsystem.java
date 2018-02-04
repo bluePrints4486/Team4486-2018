@@ -4,7 +4,6 @@ import org.usfirst.frc.team4486.robot.OI;
 import org.usfirst.frc.team4486.robot.RobotMap;
 import org.usfirst.frc.team4486.robot.commands.*;
 
-import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.VictorSP;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -31,9 +30,9 @@ public class DriveSubsystem extends Subsystem {
 		
 		SpeedControllerGroup scLeft = new SpeedControllerGroup(doubleLeftMotor,singleLeftMotor); 
 				
-	drive  = new DifferentialDrive(scLeft,scRight);
+		drive  = new DifferentialDrive(scLeft,scRight);
 	
-	drive.setMaxOutput(.65);
+		drive.setMaxOutput(.65);
 	
 	}
 	

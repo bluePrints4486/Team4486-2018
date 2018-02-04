@@ -28,8 +28,8 @@ public class BoxIntakeSubsystem extends Subsystem {
 	}
 	
 	public void stopIntake(){
-			doubleIntakeMotor.set(0);
-		}
+		doubleIntakeMotor.set(0);
+	}
 	
 
     public void initDefaultCommand() {
@@ -38,7 +38,7 @@ public class BoxIntakeSubsystem extends Subsystem {
     	
     	setDefaultCommand(new StopIntake());
     	
-		}
+	}
 }
     
     

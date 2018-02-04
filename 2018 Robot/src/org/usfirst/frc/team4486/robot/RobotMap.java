@@ -17,21 +17,23 @@ public class RobotMap {
 	// public static int rangefinderPort = 1;
 	// public static int rangefinderModule = 1;
 	
-	//drive speed controllers
+	//drive speed controllers ports
 	public static final int DOUBLE_RIGHT_MOTOR = 0;
 	public static final int DOUBLE_LEFT_MOTOR = 1;
 	public static final int SINGLE_RIGHT_MOTOR = 2;
 	public static final int SINGLE_LEFT_MOTOR = 3;
 	
-	//winch speed controllrs/ Intake Outake
-	
+	//winch speed controller port
 	public static final int DOUBLE_WINCH_MOTOR = 4;
 	
-	public static final int DRIVER_JOYSTICK = 0;
-	public static final int MANIPULATOR_JOYSTICK = 1;
+	//intake speed controller port
 	public static final int DOUBLE_INTAKE_MOTOR =5;
 	
-	//Buttons
+	//joystick ports
+	public static final int DRIVER_JOYSTICK = 0;
+	public static final int MANIPULATOR_JOYSTICK = 1;
+	
+	//manipulator buttons
 	public static final int INTAKE_BUTTON = 1;
-	public static final int OUTTAKE_BUTTON =2;
+	public static final int OUTAKE_BUTTON =2;
 }
