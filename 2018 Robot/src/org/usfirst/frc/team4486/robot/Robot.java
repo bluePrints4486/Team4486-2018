@@ -8,10 +8,9 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
-import org.usfirst.frc.team4486.robot.commands.ExampleCommand;
+
 import org.usfirst.frc.team4486.robot.subsystems.BoxIntakeSubsystem;
 import org.usfirst.frc.team4486.robot.subsystems.DriveSubsystem;
-import org.usfirst.frc.team4486.robot.subsystems.ExampleSubsystem;
 import org.usfirst.frc.team4486.robot.subsystems.WinchSubsystem;
 
 /**
@@ -23,7 +22,6 @@ import org.usfirst.frc.team4486.robot.subsystems.WinchSubsystem;
  */
 public class Robot extends IterativeRobot {
 
-	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 	public static OI oi;
 	
 	public static final DriveSubsystem drive = new DriveSubsystem();
@@ -72,7 +70,7 @@ public class Robot extends IterativeRobot {
 	 */
 	@Override
 	public void autonomousInit() {
-		autonomousCommand = new ExampleCommand();
+		//autonomousCommand = new ExampleCommand();
 
 		/*
 		 * String autoSelected = SmartDashboard.getString("Auto Selector",

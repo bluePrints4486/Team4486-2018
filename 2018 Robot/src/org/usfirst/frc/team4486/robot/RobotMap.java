@@ -18,28 +18,26 @@ public class RobotMap {
 	// public static int rangefinderModule = 1;
 	
 	//CAN ports
-	public static final int LEFT_DRIVE_1 = 1;
-	public static final int LEFT_DRIVE_2 = 2;
-	public static final int LEFT_DRIVE_3 = 3;
+	public static final int LEFT_DRIVE_1 = 4;
+	public static final int LEFT_DRIVE_2 = 5;
+	public static final int LEFT_DRIVE_3 = 6;
 	
-	public static final int RIGHT_DRIVE_1 = 4;
-	public static final int RIGHT_DRIVE_2 = 5;
-	public static final int RIGHT_DRIVE_3 = 6;
+	public static final int RIGHT_DRIVE_1 = 7;
+	public static final int RIGHT_DRIVE_2 = 8;
+	public static final int RIGHT_DRIVE_3 = 9;
 	
+	public static final int WINCH_1 = 10;
+	public static final int WINCH_2 = 11;
 	
-	//PWM drive speed controllers
-	public static final int DOUBLE_RIGHT_MOTOR = 0;
-	public static final int DOUBLE_LEFT_MOTOR = 1;
-	public static final int SINGLE_RIGHT_MOTOR = 2;
-	public static final int SINGLE_LEFT_MOTOR = 3;
+	public static final int PICKUP_LEFT = 1;
+	public static final int PICKUP_RIGHT = 12;
 	
-	//winch speed controllrs/ Intake Outake
+	public static final int CLIMBING_WINCH_1 = 2;
+	public static final int CLIMBING_WINCH_2 = 3;
 	
-	public static final int DOUBLE_WINCH_MOTOR = 4;
-	
+	//Joystick ports
 	public static final int DRIVER_JOYSTICK = 0;
 	public static final int MANIPULATOR_JOYSTICK = 1;
-	public static final int DOUBLE_INTAKE_MOTOR =5;
 	
 	//Buttons
 	public static final int INTAKE_BUTTON = 1;

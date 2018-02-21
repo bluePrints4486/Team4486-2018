@@ -4,6 +4,10 @@ import org.usfirst.frc.team4486.robot.OI;
 import org.usfirst.frc.team4486.robot.RobotMap;
 import org.usfirst.frc.team4486.robot.commands.MoveWinch;
 
+import com.ctre.phoenix.motorcontrol.ControlMode;
+import com.ctre.phoenix.motorcontrol.can.TalonSRX;
+import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
+
 import edu.wpi.first.wpilibj.VictorSP;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
@@ -15,10 +19,13 @@ public class WinchSubsystem extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 	
-	VictorSP doubleWinchMotor = new VictorSP(RobotMap.DOUBLE_WINCH_MOTOR);
+	WPI_TalonSRX winchMotor1 = new WPI_TalonSRX(RobotMap.WINCH_1);
+	WPI_TalonSRX winchMotor2 = new WPI_TalonSRX(RobotMap.WINCH_2);
+	
 	public void moveWinch(){
 		
-		doubleWinchMotor.set(-OI.manipulator.getY());
+		winchMotor1.set(-OI.manipulator.getY());
+		winchMotor2.set(-OI.manipulator.getY());
 	}
 	
 

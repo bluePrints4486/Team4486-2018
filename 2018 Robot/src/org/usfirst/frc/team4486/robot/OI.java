@@ -5,7 +5,6 @@ import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
 import org.usfirst.frc.team4486.robot.RobotMap;
-import org.usfirst.frc.team4486.robot.commands.ExampleCommand;
 import org.usfirst.frc.team4486.robot.commands.RunIntake;
 import org.usfirst.frc.team4486.robot.commands.RunOutake;
 

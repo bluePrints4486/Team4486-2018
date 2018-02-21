@@ -5,6 +5,8 @@ import org.usfirst.frc.team4486.robot.RobotMap;
 import org.usfirst.frc.team4486.robot.commands.*;
 
 import com.ctre.CANTalon;
+import com.ctre.phoenix.motorcontrol.can.TalonSRX;
+import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.SpeedController;
@@ -24,19 +26,17 @@ public class DriveSubsystem extends Subsystem {
 	 DifferentialDrive drive;
 	 
 	public DriveSubsystem(){
-		CANTalon leftTalon1 = new CANTalon(RobotMap.LEFT_DRIVE_1);
-		CANTalon leftTalon2 = new CANTalon(RobotMap.LEFT_DRIVE_2);
-		CANTalon leftTalon3 = new CANTalon(RobotMap.LEFT_DRIVE_3);
+		WPI_TalonSRX leftTalon1 = new WPI_TalonSRX(RobotMap.LEFT_DRIVE_1);
+		WPI_TalonSRX leftTalon2 = new WPI_TalonSRX(RobotMap.LEFT_DRIVE_2);
+		WPI_TalonSRX leftTalon3 = new WPI_TalonSRX(RobotMap.LEFT_DRIVE_3);
 		
-		CANTalon rightTalon1 = new CANTalon(RobotMap.RIGHT_DRIVE_1);
-		CANTalon rightTalon2 = new CANTalon(RobotMap.RIGHT_DRIVE_2);
-		CANTalon rightTalon3 = new CANTalon(RobotMap.RIGHT_DRIVE_3);
+		WPI_TalonSRX rightTalon1 = new WPI_TalonSRX(RobotMap.RIGHT_DRIVE_1);
+		WPI_TalonSRX rightTalon2 = new WPI_TalonSRX(RobotMap.RIGHT_DRIVE_2);
+		WPI_TalonSRX rightTalon3 = new WPI_TalonSRX(RobotMap.RIGHT_DRIVE_3);
 		
-		SpeedControllerGroup scRight = new SpeedControllerGroup((SpeedController)rightTalon1,
-				(SpeedController)rightTalon2,(SpeedController)rightTalon3);
+		SpeedControllerGroup scRight = new SpeedControllerGroup(rightTalon1,rightTalon2,rightTalon3);
 		
-		SpeedControllerGroup scLeft = new SpeedControllerGroup((SpeedController)leftTalon1,
-				(SpeedController)leftTalon2,(SpeedController)leftTalon3); 
+		SpeedControllerGroup scLeft = new SpeedControllerGroup(leftTalon1,leftTalon2,leftTalon3); 
 		
 		//VictorSP doubleRightMotor = new VictorSP(RobotMap.DOUBLE_RIGHT_MOTOR);
 		//VictorSP singleRightMotor = new VictorSP(RobotMap.SINGLE_RIGHT_MOTOR);
