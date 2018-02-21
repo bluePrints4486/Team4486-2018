@@ -33,7 +33,7 @@ public class DriveSubsystem extends Subsystem {
 				
 	drive  = new DifferentialDrive(scLeft,scRight);
 	
-	drive.setMaxOutput(.65);
+	drive.setMaxOutput(.6);
 	
 	}
 	
