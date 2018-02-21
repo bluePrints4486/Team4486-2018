@@ -17,7 +17,17 @@ public class RobotMap {
 	// public static int rangefinderPort = 1;
 	// public static int rangefinderModule = 1;
 	
-	//drive speed controllers
+	//CAN ports
+	public static final int LEFT_DRIVE_1 = 1;
+	public static final int LEFT_DRIVE_2 = 2;
+	public static final int LEFT_DRIVE_3 = 3;
+	
+	public static final int RIGHT_DRIVE_1 = 4;
+	public static final int RIGHT_DRIVE_2 = 5;
+	public static final int RIGHT_DRIVE_3 = 6;
+	
+	
+	//PWM drive speed controllers
 	public static final int DOUBLE_RIGHT_MOTOR = 0;
 	public static final int DOUBLE_LEFT_MOTOR = 1;
 	public static final int SINGLE_RIGHT_MOTOR = 2;
