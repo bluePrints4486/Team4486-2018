@@ -4,12 +4,10 @@ package org.usfirst.frc.team4486.robot;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
-import edu.wpi.first.wpilibj.livewindow.LiveWindow;
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import org.usfirst.frc.team4486.robot.commands.ExampleCommand;
 import org.usfirst.frc.team4486.robot.subsystems.BoxIntakeSubsystem;
+import org.usfirst.frc.team4486.robot.subsystems.ClimberWinchSubsystem;
 import org.usfirst.frc.team4486.robot.subsystems.DriveSubsystem;
 import org.usfirst.frc.team4486.robot.subsystems.ExampleSubsystem;
 import org.usfirst.frc.team4486.robot.subsystems.WinchSubsystem;
@@ -31,6 +29,8 @@ public class Robot extends IterativeRobot {
 	public static final WinchSubsystem winch = new WinchSubsystem();
 	
 	public static final BoxIntakeSubsystem intake = new BoxIntakeSubsystem(); 
+	
+	public static final ClimberWinchSubsystem climber = new ClimberWinchSubsystem();
 
 	Command autonomousCommand;
 

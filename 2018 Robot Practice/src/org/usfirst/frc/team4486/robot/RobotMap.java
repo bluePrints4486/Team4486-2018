@@ -31,7 +31,10 @@ public class RobotMap {
 	public static final int MANIPULATOR_JOYSTICK = 1;
 	public static final int DOUBLE_INTAKE_MOTOR =5;
 	
+	public static final int CLIMBER_DOUBLE_WINCH_MOTOR = 6;
+	
 	//Buttons
 	public static final int INTAKE_BUTTON = 1;
 	public static final int OUTTAKE_BUTTON =2;
+	public static final int CLIMB_BUTTON =3;
 }
