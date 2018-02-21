@@ -1,10 +1,10 @@
 package org.usfirst.frc.team4486.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
-import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
 import org.usfirst.frc.team4486.robot.RobotMap;
+import org.usfirst.frc.team4486.robot.commands.RunClimber;
 import org.usfirst.frc.team4486.robot.commands.RunIntake;
 import org.usfirst.frc.team4486.robot.commands.RunOutake;
 
@@ -46,11 +46,13 @@ public class OI {
 	
 	public static JoystickButton intakeButton = new JoystickButton(manipulator,RobotMap.INTAKE_BUTTON);
 	public static JoystickButton outakeButton = new JoystickButton(manipulator,RobotMap.OUTTAKE_BUTTON);
+	public static JoystickButton climbButton = new JoystickButton(manipulator,RobotMap.CLIMB_BUTTON);
 	
 	public OI(){
 		
 		intakeButton.whileHeld(new RunIntake());
 		outakeButton.whileHeld(new RunOutake());
+		climbButton.whileHeld(new RunClimber());
 	}
 	
 }

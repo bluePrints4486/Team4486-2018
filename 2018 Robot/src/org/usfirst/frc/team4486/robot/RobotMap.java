@@ -42,4 +42,5 @@ public class RobotMap {
 	//Buttons
 	public static final int INTAKE_BUTTON = 1;
 	public static final int OUTTAKE_BUTTON =2;
+	public static final int CLIMB_BUTTON =3;
 }
